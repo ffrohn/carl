@@ -27,7 +27,7 @@ std::vector<double> root_approximation(const std::vector<double>& coeffs) {
 	
 	// Save real parts to tmp
 	std::vector<double> tmp;
-	for (uint i = 0; i < std::size_t(eigenvalues.size()); ++i) {
+	for (unsigned i = 0; i < std::size_t(eigenvalues.size()); ++i) {
 		if (!std::isfinite(eigenvalues[Index(i)].real()) || !std::isfinite(eigenvalues[Index(i)].imag())) {
 			continue;
 		}
